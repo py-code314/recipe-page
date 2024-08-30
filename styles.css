@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format('truetype');
+    font-weight: 400 600 700; /* 100 1000 */
+}
+
+@font-face {
+    font-family: 'YoungSerif';
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --max-width: 23.4375rem; /* 375px */
+    --img-height: 4.5rem; /* 72px */
+    --spacer-xs: 0.9375rem; /* 15px */
+    --spacer-sm: 1.5625rem; /* 25px */
+    --spacer-md: 1.875rem; /* 30px */
+    --spacer-lg: 2.25rem; /* 35px */
+    --spacer-xlg: 2.8125rem; /* 45px */
+    --spacer-big: 4.375rem; /* 70px */
+    --bg-color-primary: #fff;
+    --bg-color-secondary: #fff5fa;
+    --body-bg-color: #f3e6d8;
+    --subtitle-color-primary: #854632;
+    --subtitle-color-secondary: #7b284f;
+    --title-color: #302d2c;
+    --list-item-heading-color: #5f574e;
+    --border-color: #e4ded8;
+    --fs-body: 1rem; /* 16px */
+
+    
+}
+
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+
+
+
