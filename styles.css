@@ -1,89 +1,173 @@
 @font-face {
-    font-family: 'Outfit';
-    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format('truetype');
-    font-weight: 400 600 700; /* 100 1000 */
+	font-family: 'Outfit';
+	src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf)
+		format('truetype');
+	font-weight: 400 600 700; /* 100 1000 */
 }
 
 @font-face {
-    font-family: 'YoungSerif';
-    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf) format('truetype');
-    font-weight: 400;
-    font-style: normal;
+	font-family: 'Young Serif';
+	src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf) format('truetype');
+	font-weight: 400;
+	font-style: normal;
 }
 
 :root {
-    --max-width: 23.4375rem; /* 375px */
-    --img-height: 4.5rem; /* 72px */
-    --spacer-xs: 0.9375rem; /* 15px */
-    --spacer-sm: 1.5625rem; /* 25px */
-    --spacer-md: 1.875rem; /* 30px */
-    --spacer-lg: 2.25rem; /* 35px */
-    --spacer-xlg: 2.8125rem; /* 45px */
-    --spacer-big: 4.375rem; /* 70px */
-    --bg-color-primary: #fff;
-    --bg-color-secondary: #fff5fa;
-    --body-bg-color: #f3e6d8;
-    --subtitle-color-primary: #854632;
-    --subtitle-color-secondary: #7b284f;
-    --title-color: #302d2c;
-    --list-item-heading-color: #5f574e;
-    --border-color: #e4ded8;
-    --fs-body: 1rem; /* 16px */
-
-    
+	--max-width: 23.4375rem; /* 375px */
+	--img-height: 4.5rem; /* 72px */
+    --spacer-5: 0.25rem; /* 4px */
+	--spacer-xs: 0.5rem; /* 8px */
+    --spacer-4: 0.75rem; /* 12px */
+    --spacer-2: 1rem; /* 16px */
+    --spacer-1: 1.25rem; /* 20px */
+    --spacer-3: 1.375rem; /* 22px */
+	--spacer-sm: 1.5rem; /* 24px */
+	--spacer-md: 1.875rem; /* 30px need it*/
+	--spacer-lg: 2.5rem; /* 40px */
+	--spacer-xlg: 2.8125rem; /* 45px */
+	--spacer-big: 4.375rem; /* 70px */
+	--bg-color-primary: #fff;
+	--bg-color-secondary: #fff5fa;
+	--body-bg-color: #f3e6d8;
+	--subtitle-color-primary: #854632;
+	--subtitle-color-secondary: #7b284f;
+	--title-color: #302d2c;
+	--list-item-heading-color: #5f574e;
+	--border-color: #e4ded8;
+	--fs-body: 1rem; /* 16px */
+	--fs-title: 2.25rem; /* 36px */
+	--ff-body: 'Outfit', sans-serif;
+	--ff-heading: 'Young Serif', serif;
+	--fw-regular: 400;
+	--fw-semibold: 600;
+	--fw-bold: 700;
 }
 
-
-
-/* Box sizing rules */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
-
-/* Prevent font size inflation */
-html {
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
+/*
+  2. Remove default margin
+*/
+* {
+	margin: 0;
 }
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
 
-/* Remove default margin in favour of better control in authored CSS */
-body, h1, h2, h3, h4, p,
-figure, blockquote, dl, dd {
-  margin-block-end: 0;
-}
-
-
-
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  line-height: 1.5;
-}
-
-/* Set shorter line heights on headings and interactive elements */
-h1, h2, h3, h4,
-button, input, label {
-  line-height: 1.1;
-}
-
-/* Balance text wrapping on headings */
-h1, h2,
-h3, h4 {
-  text-wrap: balance;
-}
-
-
-
-/* Make images easier to work with */
+/*
+  5. Improve media defaults
+*/
 img {
-  max-width: 100%;
-  display: block;
+	display: block;
+	max-width: 100%;
 }
 
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
 
+ul {
+    list-style: none;
+}
 
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: var(--ff-body);
+}
+
+.recipe-page {
+	max-width: var(--max-width);
+	border: 1px solid #f01dc2;
+	/* display: flex;
+    flex-direction: column;
+    gap: 0.5rem; */
+}
+
+.container {
+	/* padding: 1.5rem; */
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+}
+
+.header__title {
+	font-family: var(--ff-heading);
+	font-weight: var(--fw-regular);
+	font-size: var(--fs-title);
+	line-height: 1;
+
+	padding-inline: var(--spacer-md);
+}
+
+.recipe__description {
+	/* padding-inline: var(--spacer-md); */
+	padding: var(--spacer-sm) var(--spacer-md) var(--spacer-md);
+}
+
+.time {
+	width: 83%;
+	margin: auto;
+	border: 1px solid #2ad54c;
+	padding: 1.25rem 2.5rem 1rem 1.375rem;
+	/* line-height: ; */
+}
+
+.time__caption {
+	font-size: 1.25rem; /* 20px */
+	font-weight: var(--fw-semibold);
+	margin-block-end: 0.75rem;
+    color: var(--subtitle-color-secondary);
+}
+
+.time__list {
+	/* list-style: none; */
+	padding-inline-start: 0.5rem;
+}
+
+.time__item {
+	display: flex;
+    align-items: center;
+	/* border: 1px solid #5c4ae9; */
+    margin-block-end: 0.5rem;
+}
+
+.time__item::before {
+	content: '';
+	width: 0.25rem;
+	height: 0.25rem;
+	border-radius: 50%;
+	background: var(--subtitle-color-secondary);
+	margin-right: 1.8125rem;
+	
+}
+
+.ingredients {
+    padding: 1.2rem 2.5rem 1rem 1.3rem;
+}
 
 
