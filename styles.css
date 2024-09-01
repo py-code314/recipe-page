@@ -206,7 +206,37 @@ body {
 	
 }
 
+.instructions {
+	padding-block-start: 24px;
+	padding-block-end: 24px;
+	border-bottom: 1px solid var(--border-color);
+}
 
+.instructions__title {
+	margin-block-end: 16px;
+}
+
+.instructions__list {
+	padding-inline-start: 8px;
+}
+
+.instructions__item {
+	display: flex;
+	margin-block-end: 8px;
+	counter-increment: step-counter;
+}
+
+.instructions__item::before {
+	content: counter(step-counter)".";
+	color: var(--subtitle-color-secondary);
+	font-weight: var(--fw-bold);
+	margin-right: 20px;
+	
+}
+
+#increase-marg::before {
+	margin-right: 22px;
+}
 
 
 
