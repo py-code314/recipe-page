@@ -238,6 +238,50 @@ body {
 	margin-right: 22px;
 }
 
+.nutrition {
+	padding-block-start: 24px;
+	padding-block-end: 24px;
+}
+
+.nutrition__title {
+	margin-block-end: 18px;
+}
+
+.nutrition__desc{
+	max-width: 95%;
+	margin-block-end: 10px;
+}
+
+.nutrition__value {
+	font-weight: var(--fw-bold);
+	color: var(--subtitle-color-secondary);
+}
+
+.nutrition__table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.nutrition__table tr {
+	border: 1px solid #000;
+	
+}
+
+.nutrition__nutrient {
+	width: 50%;
+	padding-left: 32px;
+	padding-bottom: 12px;
+	padding-top: 11px;
+}
+.nutrition__value {
+	width: 50%;
+	padding-left: 8px;
+	padding-bottom: 12px;
+	padding-top: 11px;
+} 
+
+
+
 
 
 
