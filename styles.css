@@ -19,9 +19,11 @@
 	--spacer-xs: 0.5rem; /* 8px */
     --spacer-4: 0.75rem; /* 12px */
     --spacer-2: 1rem; /* 16px */
+    --spacer-7: 1.2rem; 
     --spacer-1: 1.25rem; /* 20px */
     --spacer-3: 1.375rem; /* 22px */
 	--spacer-sm: 1.5rem; /* 24px */
+    --spacer-6: 1.8125rem; /* 29px */
 	--spacer-md: 1.875rem; /* 30px need it*/
 	--spacer-lg: 2.5rem; /* 40px */
 	--spacer-xlg: 2.8125rem; /* 45px */
@@ -100,61 +102,55 @@ body {
 .recipe-page {
 	max-width: var(--max-width);
 	border: 1px solid #f01dc2;
-	/* display: flex;
-    flex-direction: column;
-    gap: 0.5rem; */
+	
 }
 
 .container {
-	/* padding: 1.5rem; */
+	padding-inline: 1.875rem;
 }
 
-.header {
-	display: flex;
-	flex-direction: column;
-	gap: 2.5rem;
-}
+
 
 .header__title {
 	font-family: var(--ff-heading);
 	font-weight: var(--fw-regular);
 	font-size: var(--fs-title);
 	line-height: 1;
-
-	padding-inline: var(--spacer-md);
+	margin-block-start: 2.5rem;
 }
 
 .recipe__description {
-	/* padding-inline: var(--spacer-md); */
-	padding: var(--spacer-sm) var(--spacer-md) var(--spacer-md);
+	margin-block-start: 1.5rem;
 }
 
 .time {
-	width: 83%;
-	margin: auto;
+
 	border: 1px solid #2ad54c;
-	padding: 1.25rem 2.5rem 1rem 1.375rem;
-	/* line-height: ; */
+	padding: 16px 1.5rem;
+	margin-block-start: 2rem;
 }
 
 .time__caption {
 	font-size: 1.25rem; /* 20px */
 	font-weight: var(--fw-semibold);
-	margin-block-end: 0.75rem;
+	margin-block-end: 12px;
     color: var(--subtitle-color-secondary);
 }
 
 .time__list {
-	/* list-style: none; */
-	padding-inline-start: 0.5rem;
+	padding-inline-start: 8px;
 }
 
 .time__item {
 	display: flex;
     align-items: center;
-	/* border: 1px solid #5c4ae9; */
-    margin-block-end: 0.5rem;
+	margin-block-end: 0.5rem;
+    
 }
+
+
+
+
 
 .time__item::before {
 	content: '';
@@ -162,12 +158,31 @@ body {
 	height: 0.25rem;
 	border-radius: 50%;
 	background: var(--subtitle-color-secondary);
-	margin-right: 1.8125rem;
+	margin-right: 28px;
 	
 }
 
-.ingredients {
-    padding: 1.2rem 2.5rem 1rem 1.3rem;
+/* .ingredients {
+	padding-block-start: 1.5rem;
 }
+
+.ingredients__title,
+.instructions__title,
+.nutrition__title {
+	font-family: var(--ff-heading);
+	font-weight: var(--fw-regular);
+	font-size: 28px;
+	
+}
+
+.ingredients__title {
+	margin-block-end: 0.9375rem;
+}
+
+.ingredients__list {
+	padding-inline-start: 0.375rem;
+} */
+
+
 
 
