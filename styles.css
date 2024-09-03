@@ -13,7 +13,10 @@
 }
 
 :root {
-	--max-width: 23.4375rem; /* 375px */
+	--max-width: 23.4375rem; 
+	/* 375px */
+	/* --max-width: clamp(20rem, 10.545rem + 47.273vw, 46rem);  */
+	/* 320px to 736px */
 
 	--bg-color-primary: #fff;
 	--bg-color-secondary: #fff5fa;
@@ -240,6 +243,43 @@ body {
 .nutrition__table--last-row th:first-of-type,
 .nutrition__table--last-row td:first-of-type {
 	padding-block-end: 0;
+}
+
+@media (min-width: 62.5rem) {
+	:root {
+		--max-width: 46rem; /* 736px */
+		--fs-title: 40px;
+		--space-xl: 22px;
+	}	
+
+	body {
+		background-color: var(--body-bg-color);
+	}
+
+	.recipe {
+		background-color: var(--bg-color-primary);
+		border-radius: 24px;
+		padding: 40px;
+	}
+
+	.container {
+		padding: 40px 0 0;
+	}
+
+	.recipe__image {
+		border-radius: 12px;
+	}
+
+	.time {
+		padding: var(--space-3xl);
+	}
+
+	.nutrition__table td {
+	
+	padding-inline-start: 0;
+	
+	
+}
 }
 
 
