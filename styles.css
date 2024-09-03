@@ -3,7 +3,7 @@
 	font-family: 'Outfit';
 	src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf)
 		format('truetype');
-	font-weight: 400 600 700; /* 100 1000 */
+	font-weight: 400 600 700;
 }
 
 @font-face {
@@ -96,7 +96,6 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;	
-	
 	font-family: var(--ff-body);
 	font-weight: var(--fw-regular);
 	font-size: var(--fs-body);
