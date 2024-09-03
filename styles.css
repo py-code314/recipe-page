@@ -103,14 +103,14 @@ body {
 	padding: var(--space-5xl) var(--space-4xl);
 }
 
-.header__title {
+.recipe__title {
 	font-family: var(--ff-heading);
 	font-weight: var(--fw-regular);
 	font-size: var(--fs-title);
 	line-height: 1;
 }
 
-.recipe__description {
+.recipe__intro {
 	margin-block-start: var(--space-2xl);
 	margin-block-end: var(--space-4xl);
 }
@@ -164,9 +164,9 @@ body {
 	border-bottom: 0px solid var(--border-color);
 }
 
-.ingredients__title,
-.instructions__title,
-.nutrition__title {
+.ingredients__subtitle,
+.instructions__subtitle,
+.nutrition__subtitle {
 	font-family: var(--ff-heading);
 	font-weight: var(--fw-regular);
 	font-size: var(--fs-subtitle-primary);
@@ -198,7 +198,7 @@ body {
 	padding-block-start: var(--space-4xl);
 }
 
-.nutrition__desc {
+.nutrition__intro {
 	margin-block-end: var(--space-2xl);
 	padding-inline-end: var(--space-xs);
 }
@@ -232,12 +232,14 @@ body {
 	color: var(--subtitle-color-secondary);
 }
 
-.last-row th:first-of-type,
-.last-row td:first-of-type {
+.nutrition__table--first-row th:first-of-type,
+.nutrition__table--first-row td:first-of-type {
+	padding-block-start: 0;
+}
+
+.nutrition__table--last-row th:first-of-type,
+.nutrition__table--last-row td:first-of-type {
 	padding-block-end: 0;
 }
 
-.first-row th:first-of-type,
-.first-row td:first-of-type {
-	padding-block-start: 0;
-}
+
