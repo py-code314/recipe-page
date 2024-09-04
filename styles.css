@@ -100,7 +100,6 @@ body {
 	font-weight: var(--fw-regular);
 	font-size: var(--fs-body);
 	color: var(--text-color);
-	padding: var(--space-6xl) 0;
 }
 
 /* Styles for recipe container */
@@ -264,6 +263,7 @@ body {
 	/* Styles for body and recipe container */
 	body {
 		background-color: var(--body-bg-color);
+		padding: var(--space-6xl) 0;
 	}
 
 	.recipe {
