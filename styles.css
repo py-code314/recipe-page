@@ -97,6 +97,7 @@ body {
 	justify-content: center;
 	align-items: center;	
 	font-family: var(--ff-body);
+  font-display: swap;
 	font-weight: var(--fw-regular);
 	font-size: var(--fs-body);
 	color: var(--text-color);
@@ -114,6 +115,7 @@ body {
 /* Styles for recipe header */
 .recipe__title {
 	font-family: var(--ff-heading);
+  font-display: swap;
 	font-weight: var(--fw-regular);
 	font-size: var(--fs-title);
 	line-height: 1;
@@ -179,6 +181,7 @@ body {
 .instructions__subtitle,
 .nutrition__subtitle {
 	font-family: var(--ff-heading);
+  font-display: swap;
 	font-weight: var(--fw-regular);
 	font-size: var(--fs-subtitle-primary);
 	color: var(--subtitle-color-secondary);
